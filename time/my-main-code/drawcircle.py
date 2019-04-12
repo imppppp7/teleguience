@@ -47,8 +47,7 @@ cv2.resizeWindow('image2',640,480)
 # cv2.namedWindow('image2_cp',cv2.WINDOW_NORMAL)
 # cv2.resizeWindow('image2_cp',640,480)
 cv2.setMouseCallback('image',draw_circle)
-print(img)
-print(img2)
+
 while 1:
     cv2.imshow('image',img)
     # cv2.imshow('image_cp',img_copy)
