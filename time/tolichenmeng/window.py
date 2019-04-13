@@ -27,7 +27,7 @@ image1不断地在刷新，但是仍然看不到做的标记 所以每次show im
 
 
 class Window:
-	def __init__(self,windowname1, windowname2):
+	def __init__(self, windowname1, windowname2):
 		self.windowname1, self.windowname2 = windowname1, windowname2
 		self.image1 = np.zeros([800, 1280, 3], np.uint8)
 		self.image2 = np.zeros([800, 1280, 3], np.uint8)
@@ -69,7 +69,6 @@ class Window:
 
 	def nobiaotilan(self):
 		cv2.setWindowProperty(self.windowname2, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
-
 
 	def bindingwi(self, color1, color2):
 		def drawline(event, x, y,flags,param):
