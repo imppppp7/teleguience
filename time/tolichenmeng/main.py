@@ -24,7 +24,9 @@ while 1:
     frame = cv2.flip(frame, 0)
     frame = cv2.resize(frame, (1280, 800))
     pro.addimage(frame)
-    pro.showimage(800, 600, 100, 100)
+
+    # 前两个参数调大小，后两个参数调位置
+    pro.showimage(800, 600, 10, 10)
     k = cv2.waitKey(1) & 0xFF
     if k == ord('m'):
         pro.mode = not pro.mode
