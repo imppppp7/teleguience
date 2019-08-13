@@ -5,6 +5,7 @@ import mvsdk
 
 def main_loop():
 	# 枚举相机
+	# meiju
 	DevList = mvsdk.CameraEnumerateDevice()
 	nDev = len(DevList)
 	if nDev < 1:
